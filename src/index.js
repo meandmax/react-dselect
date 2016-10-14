@@ -1,10 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
-import list from './list-mock';
+import Demo from './demo';
 
 ReactDOM.render(
-  <App list={list} />,
+  <Demo />,
   document.getElementById('root')
 );

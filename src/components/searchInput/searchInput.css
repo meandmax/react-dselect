@@ -1,0 +1,20 @@
+.input {
+    position: relative;
+    text-align: left;
+    border: 1px solid #cacedb;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 300;
+    line-height: 24px;
+    color: #696c76;
+    padding: 7px 15px;
+}
+
+input::placeholder {
+    color: #696c76;
+}

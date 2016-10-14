@@ -1,0 +1,90 @@
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.listItem {
+    position: relative;
+    color: #696c76;
+    cursor: pointer;
+}
+
+.listItemInner,
+.listHeader {
+    position: relative;
+    padding: 10px 0;
+}
+
+.listHeaderOpen {
+    border-bottom: 1px solid #696c76;
+}
+
+.listItemText {
+    display: inline-block;
+}
+
+/*1*/
+
+.listItemLevel1>.list {
+    background: #F4F5F9;
+}
+
+.listItemLevel1 .listItemText {
+    padding-left: 30px;
+}
+
+
+/*2*/
+
+.listItemLevel2>.list {
+    background: #e6e7f0;
+}
+
+.listItemLevel2 .listItemText {
+    padding-left: 50px;
+}
+
+
+/*3*/
+
+.listItemLevel3>.list {
+    background: #f4f5f9;
+}
+
+.listItemLevel3 .listItemText {
+    padding-left: 70px;
+}
+
+
+/*4*/
+
+.listItemLevel4 .listHeaderOpen {
+    background: #E6E7F0;
+}
+
+.listItemLevel4>.list {
+    background: #F4F5F9;
+}
+
+.listItemLevel4 .listItemText {
+    padding-left: 90px;
+}
+
+
+/*caret*/
+
+.caret {
+    position: absolute;
+    top: 50%;
+    line-height: 0;
+    left: 10px;
+    margin-top: -9px;
+}
+
+.caretOpen {
+    transform: rotate(90deg);
+}
+
+.caretSvgPath {
+    fill: #696c76;
+}

@@ -1,0 +1,23 @@
+:global body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  background: #16a085;
+  height: 100%;
+  display: block;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}

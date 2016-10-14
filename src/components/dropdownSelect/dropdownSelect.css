@@ -1,0 +1,54 @@
+.wrapper {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 320px;
+}
+
+.button {
+    position: relative;
+    text-align: left;
+    border: 1px solid #cacedb;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 300;
+    line-height: 24px;
+    color: #696c76;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.caretDown {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -8px;
+    line-height: 0;
+}
+
+.caretDown svg path {
+    fill: #696c76;
+}
+
+.listItem {
+    color: #696c76;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.list {
+    text-align: left;
+    padding-left: 0;
+    list-style: none;
+    margin-top: 5px;
+    box-shadow: 0 0 4px rgba(78, 80, 86, .14), 0 4px 8px rgba(78, 80, 86, .28);
+    list-style: none;
+    max-height: 400px;
+    overflow: auto;
+    background: #fff;
+}
