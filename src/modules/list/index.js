@@ -1,22 +1,22 @@
-function getFlattendItem(item) {
+function getFlattendItem(element) {
   return {
-    text: item.text
+    name: element.name
   };
 }
 
 export const flattenList = (list) => {
-  return Object.keys(list).reduce((flattenedList, key) => {
-    if (list[key].children) {
-      return [...flattenedList, getFlattendItem(list[key]), ...flattenList(list[key].children)]
+  return list.reduce((flattenedList, element) => {
+    if (element.children) {
+      return [...flattenedList, getFlattendItem(element), ...flattenList(element.children)]
     }
     return [...flattenedList, {
-      text: list[key].text
+      name: element.name
     }];
   }, []);
 }
 
 export const filterList = (haystack, needle) => {
   return haystack.filter((listItem) => {
-    return listItem.text.toLowerCase().indexOf(needle.toLowerCase()) >= 0;
+    return listItem.name.toLowerCase().indexOf(needle.toLowerCase()) >= 0;
   });
 }
