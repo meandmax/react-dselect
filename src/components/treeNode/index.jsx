@@ -30,16 +30,16 @@ class TreeNode extends Component {
   }
 
   renderChildren(list) {
-    return Object.keys(list).map((key) => {
+    return list.map((element) => {
       const nestingLevel = this.props.nestingLevel + 1
-      if (list[key].children) {
-        return <TreeNode key={key} name={key} nestingLevel={nestingLevel} onClickText={this.props.onClickText} children={list[key].children} />
+      if (element.children) {
+        return <TreeNode key={element.name} name={element.name} nestingLevel={nestingLevel} onClickText={this.props.onClickText} children={element.children} />
       }
 
       return  (
-        <li className={getListItemClasses(styles.listItem, nestingLevel)} key={key} onClick={this.props.onClickText(key)}>
+        <li className={getListItemClasses(styles.listItem, nestingLevel)} key={element.name} onClick={this.props.onClickText(element.name)}>
           <div className={styles.listItemInner}>
-            <span className={styles.listItemText}>{list[key].text}</span>
+            <span className={styles.listItemText}>{element.name}</span>
           </div>
         </li>
       );
