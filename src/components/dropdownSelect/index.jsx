@@ -101,7 +101,7 @@ class DropdownSelect extends Component {
             </button>
           )}
           <ul className={listClasses}>
-            {this.state.searchValue ? this.renderDropdownList(this.state.filteredList) : this.renderDropdownList(this.state.list)}
+            {this.state.filteredList ? this.renderDropdownList(this.state.filteredList) : this.renderDropdownList(this.state.list)}
           </ul>
         </div>
       </div>
