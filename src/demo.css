@@ -8,6 +8,7 @@
 .wrapper {
   width: 100%;
   padding-top: 20px;
+  box-sizing: border-box;
   text-align: center;
   color: #fff;
   position: absolute;
