@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import classnames from 'classnames';
 import TreeNode from '../treeNode';
 import SearchInput from '../searchInput';
 import {filterList, flattenList} from '../../modules/list';
@@ -39,8 +40,7 @@ class DropdownSelect extends Component {
 
     if (this.state.open) {
       this.setState({
-        open: false,
-        list: this.props.list
+        open: false
       });
     }
   }
@@ -81,25 +81,29 @@ class DropdownSelect extends Component {
   render() {
     let buttonText = this.state.value || 'click here';
 
+    const listClasses = classnames(styles.list, {
+      [styles.listOpen]: this.state.open
+    });
+
     return (
       <div className={styles.wrapper} ref='dropdownSelect'>
-        {this.state.open ? (
-          <div>
-            <SearchInput onChange={this.setFilteredList} /> 
-            <ul className={styles.list}>
-              {this.state.searchValue ? this.renderDropdownList(this.state.filteredList) : this.renderDropdownList(this.state.list)}
-            </ul>
-          </div>
-        ) : (
-          <button type='button' className={styles.button} onClick={this.onClick}>
-            <span>{buttonText}</span>
-            <span className={styles.caretDown}>
+        <div>
+          {this.state.open ? (
+            <SearchInput onChange={this.setFilteredList} />
+          ) : (
+            <button type='button' className={styles.button} onClick={this.onClick}>
+              <span>{buttonText}</span>
+              <span className={styles.caretDown}>
                 <svg version="1.1" width="16" height="16" viewBox="0 0 16 16">
                   <path fill="#00000e" d="M4.431 5.918h7.2c0.108 0 0.202 0.045 0.282 0.135s0.119 0.196 0.118 0.32c0 0.133-0.038 0.242-0.113 0.326l-3.6 4.091c-0.075 0.085-0.171 0.128-0.287 0.128s-0.212-0.043-0.287-0.128l-3.6-4.091c-0.076-0.085-0.113-0.194-0.113-0.326 0-0.123 0.039-0.23 0.118-0.32s0.173-0.135 0.282-0.135z"></path>
                 </svg>
-            </span>
-          </button>
-        )}
+              </span>
+            </button>
+          )}
+          <ul className={listClasses}>
+            {this.state.searchValue ? this.renderDropdownList(this.state.filteredList) : this.renderDropdownList(this.state.list)}
+          </ul>
+        </div>
       </div>
     );
   }
