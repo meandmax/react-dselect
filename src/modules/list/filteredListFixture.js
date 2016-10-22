@@ -1,1 +1,38 @@
-    export default [{"name":"Team","id":"9","checked":true,"children":[{"name":"Management","id":"10","checked":true,"children":[{"name":"Daredevil","id":"11","checked":false},{"name":"The Punisher","id":"12","checked":false}]},{"name":"Workers","id":"13","checked":true,"children":[{"name":"Superman","id":"14","checked":false},{"name":"Captain Universe","id":"15","checked":false},{"name":"Black widow","id":"16","checked":false},{"name":"Winnie Pooh","id":"17","checked":false},{"name":"Hulk","id":"18","checked":false}]}]}];
+export default[  
+   {  
+      "name":"Team",
+      "children":[  
+         {  
+            "name":"Management",
+            "children":[  
+               {  
+                  "name":"Daredevil"
+               },
+               {  
+                  "name":"The Punisher"
+               }
+            ]
+         },
+         {  
+            "name":"Workers",
+            "children":[  
+               {  
+                  "name":"Superman"
+               },
+               {  
+                  "name":"Captain Universe"
+               },
+               {  
+                  "name":"Black widow"
+               },
+               {  
+                  "name":"Winnie Pooh"
+               },
+               {  
+                  "name":"Hulk"
+               }
+            ]
+         }
+      ]
+   }
+];

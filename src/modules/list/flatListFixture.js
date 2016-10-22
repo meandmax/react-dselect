@@ -1,1 +1,59 @@
-export default [{"id":"0","name":"Home"},{"id":"1","name":"Philosophy","checked":true},{"id":"2","name":"Shop","checked":true},{"id":"3","name":"Clothes","checked":true},{"id":"4","name":"Socks","checked":false},{"id":"5","name":"Jeans","checked":false},{"id":"6","name":"Food","checked":true},{"id":"7","name":"Banana","checked":false},{"id":"8","name":"Potatoes","checked":false},{"id":"9","name":"Team","checked":true},{"id":"10","name":"Management","checked":true},{"id":"11","name":"Daredevil","checked":false},{"id":"12","name":"The Punisher","checked":false},{"id":"13","name":"Workers","checked":true},{"id":"14","name":"Superman","checked":false},{"id":"15","name":"Captain Universe","checked":false},{"id":"16","name":"Black widow","checked":false},{"id":"17","name":"Winnie Pooh","checked":false},{"id":"18","name":"Hulk","checked":false}];
+export default[  
+   {  
+      "name":"Home"
+   },
+   {  
+      "name":"Philosophy"
+   },
+   {  
+      "name":"Shop"
+   },
+   {  
+      "name":"Clothes"
+   },
+   {  
+      "name":"Socks"
+   },
+   {  
+      "name":"Jeans"
+   },
+   {  
+      "name":"Food"
+   },
+   {  
+      "name":"Banana"
+   },
+   {  
+      "name":"Potatoes"
+   },
+   {  
+      "name":"Team"
+   },
+   {  
+      "name":"Management"
+   },
+   {  
+      "name":"Daredevil"
+   },
+   {  
+      "name":"The Punisher"
+   },
+   {  
+      "name":"Workers"
+   },
+   {  
+      "name":"Superman"
+   },
+   {  
+      "name":"Captain Universe"
+   },
+   {  
+      "name":"Black widow"
+   },
+   {  
+      "name":"Winnie Pooh"
+   },
+   {  
+      "name":"Hulk"
+   }
+];
