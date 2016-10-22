@@ -1,71 +1,72 @@
-export default {
-    Home: {
-        text: 'Home'
+export default [
+    {
+        name: 'Home'
     },
-    Philosophy: {
-        text: 'Philosophy'
+    {
+        name: 'Philosophy'
     },
-    Shop: {
-        text: 'Shop',
-        children: {
-            Clothes: {
-                text: 'Clothes',
-                children: {
-                    Socks: {
-                        text: 'Socks'
+    {
+        name: 'Shop',
+        children: [
+            {
+                name: 'Clothes',
+                children: [
+                    {
+                        name: 'Socks'
                     },
-                    Jeans: {
-                        text: 'Jeans'
+                    {
+                        name: 'Jeans'
                     },
-                },
+                ],
             },
-            Food: {
-                text: 'Food',
-                children: {
-                    Banana: {
-                        text: 'Banana'
+            {
+                name: 'Food',
+                children: [
+                    {
+                        name: 'Banana'
                     },
-                    Potatoes: {
-                        text: 'Potatoes',
+                    {
+                        name: 'Potatoes'
                     },
-                },
+                ],
+
             },
-        },
+        ],
     },
-    Team: {
-        text: 'Team',
-        children: {
-            Management: {
-                text: 'Management',
-                children: {
-                    Daredevil: {
-                        text: 'Daredevil'
+    {
+        name: 'Team',
+        children: [
+            {
+                name: 'Management',
+                children: [
+                    {
+                        name: 'Daredevil'
                     },
-                    Punisher: {
-                        text: 'The Punisher'
+                    {
+                        name: 'The Punisher'
                     },
-                },
+                ],
             },
-            Workers: {
-                text: 'Workers',
-                children: {
-                    Superman: {
-                        text: 'Superman'
+            {
+                name: 'Workers',
+                children: [
+                    {
+                        name: 'Superman'
                     },
-                    'Captain-Universe': {
-                        text: 'Captain Universe'
+                    {
+                        name: 'Captain Universe'
                     },
-                    'Black-widow': {
-                        text: 'Black widow'
+                    {
+                        name: 'Black widow'
                     },
-                    'Winnie-Pooh': {
-                        text: 'Winnie Pooh'
+                    {
+                        name: 'Winnie Pooh'
                     },
-                    'Hulk': {
-                        text: 'Hulk'
+                    {
+                        name: 'Hulk'
                     },
-                },
+                ],
             },
-        },
+        ],
     },
-};
+];
