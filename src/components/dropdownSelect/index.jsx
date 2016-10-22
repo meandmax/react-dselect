@@ -46,15 +46,15 @@ class DropdownSelect extends Component {
   }
 
   renderDropdownList(list) {
-    return Object.keys(list).map((key) => {
-      if (list[key].children) {
-        return <TreeNode key={key} name={key} nestingLevel={1} onClickText={this.setValue} children={list[key].children} />
+    return list.map((element) => {
+      if (element.children) {
+        return <TreeNode key={element.name} name={element.name} nestingLevel={1} onClickText={this.setValue} children={element.children} />
       }
 
       return  (
-        <li className={styles.listItem} key={key} onClick={this.setValue(key)}>
+        <li className={styles.listItem} key={element.name} onClick={this.setValue(element.name)}>
           <div className={styles.listItemInner}>
-            {list[key].text}
+            {element.name}
           </div>
         </li>
       );
