@@ -31,12 +31,12 @@ class DropdownSelect extends Component {
   closeDropdown(event) {
     const dropdownSelectNode = this.refs.dropdownSelect;
 
+    document.removeEventListener('click', this.closeDropdown);
+
     // if clicked on any element inside the component do not close the component
     if (!dropdownSelectNode || dropdownSelectNode.contains(event.target)) {
       return;
     }
-
-    document.removeEventListener('click', this.closeDropdown);
 
     if (this.state.open) {
       this.setState({
