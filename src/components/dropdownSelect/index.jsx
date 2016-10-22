@@ -73,7 +73,8 @@ class DropdownSelect extends Component {
       this.setState({
         value,
         open: false,
-        list: this.props.list // reset list after element is selected
+        list: this.props.list, // reset list after element is selected
+        filteredList: undefined// reset filteredList
       });    
     }
   }
